@@ -1,0 +1,41 @@
+//day 1 Qsn 1
+#include <iostream>
+using namespace std;
+int main()
+{
+ string str1,str2;
+ cin>>str1>>str2;
+ cout<<str1+str2;
+    return 0;
+}
+
+//Day 1 Qsn 2
+
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5];
+    for(int i=0;i<5;i++){
+        cout<<"Enter grade "<<i+1<<": ";
+        cin>>arr[i];
+    }
+    float avg=0;
+    for(int i=0;i<5;i++){
+        avg+=arr[i];
+    }
+    cout<<"The average grade is "<<avg/5;
+    return 0;
+}
+
+Day1 qsn 3
+
+#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    cout<<"The square of "<<num<<" is "<<(num*num);
+    return 0;
+    
+}
