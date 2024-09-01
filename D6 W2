@@ -1,0 +1,61 @@
+//Q1
+#include<iostream>
+using namespace std;
+int main(){
+    int n,sum=0;
+    cout<<"Enter the size of the array: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the array: ";
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<n;i++){
+        sum+=arr[i];
+    }
+    cout<<"Sum of the array: "<<sum;
+    return 0;
+}
+
+//Q2
+#include<iostream>
+using namespace std;
+int main(){
+    int n,evenSum=0,oddSum=0;
+    cout<<"Enter the size of the array: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the array: ";
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<n;i++){
+        if(arr[i]%2==0)evenSum+=arr[i];
+        else oddSum+=arr[i];
+    }
+    cout<<"Sum of odd numbers: "<<oddSum<<endl;
+    cout<<"Sum of even numbers: "<<evenSum;
+    return 0;
+}
+
+//Q3
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,oddCount=0,evenCount=0;
+    cout<<"Enter the size the arry: ";
+    cin>>n;
+    int arr[n];
+    cout<<"Enter the array elements: ";
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<n;i++){
+        if(arr[i]%2==0)evenCount++;
+        else oddCount++;
+    }
+    cout<<"Number of odd numbers: "<<oddCount<<endl;
+    cout<<"Number of even numbers: "<<evenCount;
+    return 0;
+}
