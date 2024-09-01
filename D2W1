@@ -1,0 +1,86 @@
+//Q1
+
+#include<iostream>
+using namespace std;
+int main(){
+   int n1,n2,n3;
+cout<<"Enter the first number: ";cin>>n1;
+cout<<"Enter the second number: ";cin>>n2;
+cout<<"Enter the third number: ";cin>>n3;
+if(n1>n2 && n1>n3)cout<<"The largest number is: "<<n1;
+else if(n2>n3 &&n2>n1)cout<<"The largest number is: "<<n2;
+else cout<<"The largest number is: "<<n3;
+    return 0;
+}
+
+//Q2
+
+#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cout<<"enter the score: ";
+    cin>>num;
+    if(num>100 or num<0)cout<<"Please enter valid marks (0 - 100) ";
+    else{
+        if(num>=90)cout<<"Grade: A";
+        else if(num>=80)cout<<"Grade: B";
+        else if(num>=70)cout<<"Grade: C";
+        else if(num>=60)cout<<"Grade: D";
+        else cout<<"Grade: F";
+    }
+    return 0;
+ }
+
+//Q3
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter a number: ";
+    cin>>n;
+    if(n>12 or n<1)cout<<"Invalid";
+    else{
+    switch(n){
+        case 1:
+        cout<<"The month is: January";
+        break; 
+         case 2:
+        cout<<"The month is: February";
+        break;
+        case 3:
+        cout<<"The month is: March";
+        break; 
+         case 4:
+        cout<<"The month is: April";
+        break; 
+         case 5:
+        cout<<"The month is: May";
+        break; 
+         case 6:
+        cout<<"The month is: June";
+        break; 
+         case 7:
+        cout<<"The month is: July";
+        break; 
+         case 8:
+        cout<<"The month is: August";
+        break; 
+         case 9:
+        cout<<"The month is: September";
+        break; 
+         case 10:
+        cout<<"The month is: October";
+        break;
+         case 11:
+        cout<<"The month is: November";
+        break; 
+         case 12:
+        cout<<"The month is: December";
+        break;  
+    }
+    }
+
+    return 0;
+}
