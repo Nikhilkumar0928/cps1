@@ -1,0 +1,58 @@
+//Q1
+#include <string>
+#include <iostream>
+using namespace std;
+int stringLength(string &str) {
+    int length = 0;
+    for (char c : str) {
+        length++;
+    }
+    return length;
+}
+
+int main() {
+  string str;
+  cout << "Enter a string: ";
+    getline(cin, str);
+    cout<< stringLength(str) << endl;
+
+    return 0;
+}
+
+//Q2
+#include<iostream>
+using namespace std;
+int countCharacter(string &str, char ch){
+    int count=0,i=0;
+    while(str[i]!='\0'){
+        if (ch==str[i])count++;
+        i++;
+    }
+    return count;
+} 
+int main(){
+    string str;
+    char ch;
+    getline(cin,str);
+    cin>>ch;
+    cout<<countCharacter(str,ch);
+    return 0;
+}
+
+//Q3
+
+#include<iostream>
+using namespace std;
+string concatenateStrings(string &str1,string &str2) {
+    return str1+str2;
+}
+int main(){
+    string str1,str2;
+    getline(cin,str1);
+    getline(cin,str2);
+    cout<<concatenateStrings(str1,str2);
+    return 0;
+}
+
+
+
